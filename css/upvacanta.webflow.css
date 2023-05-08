@@ -499,20 +499,7 @@ img {
   font-weight: 500;
 }
 
-.panoramicview {
-  border-radius: 1.875rem;
-}
 
-.panoramicv {
-  z-index: 0;
-  width: 45%;
-  height: 50rem;
-  cursor: move;
-  object-fit: fill;
-  border-radius: 2rem;
-  flex: none;
-  overflow: hidden;
-}
 
 .header-link, .header-heading {
   color: #faf5f2;
@@ -955,7 +942,6 @@ img {
 }
 
 .btn {
-  cursor: not-allowed;
   background-color: #0061d0;
   border-radius: 50px;
   margin-top: 2rem;
