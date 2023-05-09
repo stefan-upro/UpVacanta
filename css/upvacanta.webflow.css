@@ -499,7 +499,20 @@ img {
   font-weight: 500;
 }
 
+.panoramicview {
+  border-radius: 1.875rem;
+}
 
+.panoramicv {
+  z-index: 0;
+  width: 45%;
+  height: 50rem;
+  cursor: move;
+  object-fit: fill;
+  border-radius: 2rem;
+  flex: none;
+  overflow: hidden;
+}
 
 .header-link, .header-heading {
   color: #faf5f2;
@@ -1194,8 +1207,14 @@ img {
 
   .feature-header {
     flex-wrap: wrap;
+    justify-content: flex-start;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .feature {
+    flex-direction: column;
+    align-items: center;
   }
 
   .feature-main {
@@ -1237,5 +1256,3 @@ img {
     right: auto;
   }
 }
-
-
