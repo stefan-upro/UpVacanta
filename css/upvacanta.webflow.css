@@ -244,7 +244,7 @@ img {
   padding-bottom: 5rem;
 }
 
-.item-content {
+.mix {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   justify-content: space-between;
@@ -352,6 +352,42 @@ img {
   background-image: url('../images/8.jpg');
 }
 
+.item-left.hotel24 {
+  background-image: url('../images/hermanes.jpg');
+}
+
+.item-left.hotel25, .item-left.hotel26 {
+  background-image: url('../images/hotel-iri.jpg');
+}
+
+.item-left.hotel27 {
+  background-image: url('../images/porumbacul-de-sus.jpg');
+}
+
+.item-left.hotel28 {
+  background-image: url('../images/Vila-Nicopole-Art-Wine-Apartment-Brasov-Exterior-1.jpg');
+}
+
+.item-left.hotel29 {
+  background-image: url('../images/Wolkendorf-Bio-Hotel--Spa.jpg');
+}
+
+.item-left.hotel30, .item-left.hotel31 {
+  background-image: url('../images/04-1.jpg');
+}
+
+.item-left.hotel32 {
+  background-image: url('../images/Perla-Slanic-Moldova.jpg');
+}
+
+.item-left.hotel31 {
+  background-image: url('../images/294008161-1.jpg');
+}
+
+.item-left.hotel33 {
+  background-image: url('../images/domoglet-1.jpg');
+}
+
 .item-right {
   width: 50%;
 }
@@ -452,6 +488,10 @@ img {
   display: flex;
 }
 
+.feature-main-header.hidden {
+  display: none;
+}
+
 .feature-items {
   text-align: center;
 }
@@ -475,6 +515,7 @@ img {
 .light-heading {
   color: #faf5f2;
   padding-bottom: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -499,7 +540,20 @@ img {
   font-weight: 500;
 }
 
+.panoramicview {
+  border-radius: 1.875rem;
+}
 
+.panoramicv {
+  z-index: 0;
+  width: 45%;
+  height: 50rem;
+  cursor: move;
+  object-fit: fill;
+  border-radius: 2rem;
+  flex: none;
+  overflow: hidden;
+}
 
 .header-link, .header-heading {
   color: #faf5f2;
@@ -1005,6 +1059,116 @@ img {
   font-weight: 500;
 }
 
+.filter-bar {
+  z-index: 1;
+  max-width: 75rem;
+  background-color: #faf5f2;
+  border: 2px solid rgba(0, 0, 0, .05);
+  border-radius: 1.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 3rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+}
+
+.filter-wrapper {
+  justify-content: space-between;
+  display: flex;
+}
+
+.filter-chips {
+  display: flex;
+}
+
+.filter-dropdown.hidden-on-desktop {
+  display: none;
+}
+
+.mare, .munte, .delta {
+  align-self: center;
+}
+
+.chip {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  color: rgba(39, 33, 31, .7);
+  border: 2px solid rgba(0, 0, 0, .05);
+  border-radius: .625rem;
+  align-self: center;
+  margin-right: 2rem;
+  padding: 1rem 2rem;
+  transition: background-color .2s, border-color .2s, color .2s;
+  display: flex;
+}
+
+.chip:hover {
+  color: #27211f;
+  border-color: rgba(40, 95, 201, .2);
+}
+
+.chip.w--current {
+  color: #faf5f2;
+  background-color: #285fc9;
+}
+
+.chip.active {
+  color: #faf5f2;
+  background-color: #285fc9;
+  border-style: none;
+}
+
+.dropdown-list {
+  background-color: #faf5f2;
+  border-radius: .625rem;
+}
+
+.dropdown-toggle {
+  letter-spacing: .2px;
+  font-weight: 500;
+}
+
+.dropdown-toggle.chip {
+  margin-right: 0;
+  padding-right: 3.5rem;
+}
+
+.dropdown-link {
+  color: rgba(39, 33, 31, .7);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  transition: color .2s;
+}
+
+.dropdown-link:hover {
+  color: #27211f;
+}
+
+.mix-container {
+  padding-top: 2rem;
+}
+
+.mixitup-control-active {
+  color: #faf5f2;
+  background-color: #285fc9;
+}
+
+.mixitup-control-active:hover {
+  color: #faf5f2;
+}
+
+.label-number {
+  color: #27211f;
+  background-color: #faf5f2;
+  border-radius: 5px;
+  margin-bottom: 0;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-size: .8rem;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 4.1rem;
@@ -1051,6 +1215,27 @@ img {
   .text-block, .location-text {
     font-weight: 500;
   }
+
+  .filter-bar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .filter-wrapper {
+    grid-row-gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .chip {
+    margin-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .dropdown-toggle {
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1066,7 +1251,7 @@ img {
     padding-top: 2rem;
   }
 
-  .item-content {
+  .mix {
     flex-direction: column;
   }
 
@@ -1152,6 +1337,15 @@ img {
   .hero-image-block-2 {
     width: 100%;
   }
+
+  .filter-chips {
+    flex-wrap: wrap;
+  }
+
+  .chip {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1175,8 +1369,17 @@ img {
     padding-right: 1rem;
   }
 
+  .main-content {
+    margin-top: 3rem;
+  }
+
   .item-title {
     padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .mix.mare.eximtur {
+    padding-top: 2rem;
   }
 
   .item-left {
@@ -1194,13 +1397,36 @@ img {
 
   .feature-header {
     flex-wrap: wrap;
+    justify-content: flex-start;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .feature {
+    flex-direction: column;
+    align-items: center;
   }
 
   .feature-main {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .feature-contact-info {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .secondary-button {
+    background-color: rgba(250, 245, 242, 0);
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .contact-link {
+    padding-left: 0;
   }
 
   .testimonial-image-block, .testimonial-content-wrap {
@@ -1235,6 +1461,34 @@ img {
     bottom: 0%;
     left: 6%;
     right: auto;
+  }
+
+  .filter-bar {
+    border-radius: 0;
+    top: 0%;
+  }
+
+  .filter-chips {
+    grid-row-gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .filter-dropdown.hidden {
+    display: none;
+  }
+
+  .filter-dropdown.hidden-on-desktop {
+    display: block;
+  }
+
+  .chip {
+    margin-right: .5rem;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+  }
+
+  .mix-container {
+    padding-top: 1rem;
   }
 }
 
