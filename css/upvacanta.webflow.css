@@ -356,8 +356,12 @@ img {
   background-image: url('../images/hermanes.jpg');
 }
 
-.item-left.hotel25, .item-left.hotel26 {
+.item-left.hotel25 {
   background-image: url('../images/hotel-iri.jpg');
+}
+
+.item-left.hotel26 {
+  background-image: url('../images/Ioana-Boutique.jpg');
 }
 
 .item-left.hotel27 {
