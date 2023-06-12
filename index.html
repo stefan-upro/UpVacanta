@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Wed Jun 07 2023 11:55:36 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Jun 12 2023 07:35:09 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="642fc870a0adeb59679a6195" data-wf-site="642fc870a0adebe3d89a6194">
 <head>
   <meta charset="utf-8">
@@ -106,15 +106,19 @@
           </a>
           <a data-logic="add" data-filter=".munte" href="#" class="chip w-inline-block">
             <div>Munte</div>
+            <p id="lengthDisplayMunte" class="label-number"></p>
           </a>
           <a data-filter=".mare" href="#" class="chip w-inline-block">
             <div>Mare</div>
+            <p id="lengthDisplayMare" class="label-number"></p>
           </a>
           <a data-filter=".delta" href="#" class="chip w-inline-block">
             <div>Delta</div>
+            <p id="lengthDisplayDelta" class="label-number"></p>
           </a>
           <a data-logic="add" data-filter=".balneo" href="#" class="chip w-inline-block">
             <div>Balneo</div>
+            <p id="lengthDisplayBalneo" class="label-number"></p>
           </a>
           <div class="filter-dropdown hidden-on-desktop">
             <div data-hover="true" data-delay="0" class="w-dropdown">
@@ -340,7 +344,7 @@
             </div>
           </div>
         </div>
-        <div class="mix munte balneo eximtur">
+        <div class="mix balneo eximtur balneo eximtur">
           <div class="item-left hotel5">
             <div class="item-image">
               <div class="item-image-info">
@@ -1890,9 +1894,20 @@ document.getElementById('chipactive').focus();
       toggleLogic: 'and'
     }
   });
-  var collection = Array.from(containerEl.querySelectorAll('.mix'));
-//console.log(collection.length);
+var collection = Array.from(containerEl.querySelectorAll('.mix'));
 var lengthDisplay = document.getElementById('lengthDisplay');
+lengthDisplay.innerHTML =  collection.length;
+var collection = Array.from(containerEl.querySelectorAll('.munte'));
+var lengthDisplay = document.getElementById('lengthDisplayMunte');
+lengthDisplay.innerHTML =  collection.length;
+var collection = Array.from(containerEl.querySelectorAll('.mare'));
+var lengthDisplay = document.getElementById('lengthDisplayMare');
+lengthDisplay.innerHTML =  collection.length;
+var collection = Array.from(containerEl.querySelectorAll('.delta'));
+var lengthDisplay = document.getElementById('lengthDisplayDelta');
+lengthDisplay.innerHTML =  collection.length;
+var collection = Array.from(containerEl.querySelectorAll('.balneo'));
+var lengthDisplay = document.getElementById('lengthDisplayBalneo');
 lengthDisplay.innerHTML =  collection.length;
 </script>
 </body>
