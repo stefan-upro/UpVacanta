@@ -45,7 +45,7 @@ h3 {
 a {
   color: var(--brown);
   letter-spacing: .02rem;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   font-weight: 500;
   text-decoration: none;
 }
